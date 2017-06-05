@@ -5,7 +5,8 @@ public class Catedra2_fmorales {
 
     
     public static void main(String[] args) {
-        int maxelementospila=0;
+        Lifo P = new Lifo();
+        int maxelementospila=0, op=0;
         do{
             System.out.print("Ingrese cantidad maxima de elementos para la Pila (Mayor a 0)");
             maxelementospila = Leer.datoInt();
@@ -27,6 +28,20 @@ public class Catedra2_fmorales {
             
             SelPila(op,P,maxelementospila);
         }while(op != 7);
+    }
+    public static void SelPila(int op,Lifo P,int maxele){
+        int dat, aux;
+       switch(op){
+            case 1: Limpiar.cls();
+                if(P.Largo()<maxele){
+                    System.out.println("INGRESE NUMERO: ");
+                    dat=Leer.datoInt();
+                    P.Insertar(dat);
+                    System.out.println("PRESIONE ENTER PARA CONTINUAR: ");
+                    aux=Leer.datoInt();
+            break;
+                }
+       }
     }
     
 }
