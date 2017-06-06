@@ -13,7 +13,17 @@ public class Lifo {
     private NodoLifo raiz;
     
     public void Insertar(int x){
+        NodoLifo nuevo;
+        nuevo = new NodoLifo();
+        nuevo.info = x;
         
+        if(raiz == null){
+            nuevo.sig = raiz;
+            raiz = nuevo;
+        }else{
+            nuevo.sig = raiz;
+            raiz = nuevo;
+        }
     }
     public int Largo(){
         NodoLifo reco=raiz;

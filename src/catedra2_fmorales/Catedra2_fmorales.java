@@ -39,8 +39,14 @@ public class Catedra2_fmorales {
                     P.Insertar(dat);
                     System.out.println("PRESIONE ENTER PARA CONTINUAR: ");
                     aux=Leer.datoInt();
-            break;
+                }else{
+                    Limpiar.cls();
+                    System.out.println("MAXIMO ALCANZADO POR LA PILA: ["+maxele+"[");
+                    System.out.println("PRESIONE ENTER PARA CONTINUAR: ");
+                    aux=Leer.datoInt();
                 }
+            break;
+                
        }
     }
     
